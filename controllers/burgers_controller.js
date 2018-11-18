@@ -5,7 +5,7 @@ var router = express.Router();
 var cat = require("../models/burger.js");
 
 router.get("/", function(req, res) {
-    cat.all(function(data) {
+    burgers.all(function(data) {
       var hbsObject = {
         burgers: data
       };
@@ -14,4 +14,3 @@ router.get("/", function(req, res) {
     });
   });
 
-  
